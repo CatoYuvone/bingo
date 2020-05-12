@@ -3,10 +3,11 @@
 # Los 1 representan celdas ocupadas en el cartón
 
 def carton():
-    c = (
+    mi_carton = (
        (1,0,0,1,1,0,1,0,1),
        (0,1,0,1,0,1,1,1,1),
        (0,1,0,0,1,1,0,1,0)
     )
-    return c
+    return mi_carton
+
 
