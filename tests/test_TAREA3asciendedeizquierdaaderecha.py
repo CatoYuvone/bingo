@@ -8,3 +8,4 @@ def test_ascendiente():
         (3, 0, 5, 14, 16, 67, 0, 0, 0)
       )
     assert avanzar_de_izquierda_a_derecha(carton) == 1
+    # Afirmo que los números de la fila asciendan de izquierda a derecha
