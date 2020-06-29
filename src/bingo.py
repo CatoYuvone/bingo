@@ -195,7 +195,7 @@ def intentoCarton():
           if (contador == 50): 
              return intentoCarton()
 
-          numero = random.randint (1,90)
+          numero = random.randint (1, 90)
 
           columna = numero // 10
           if (columna == 9):
@@ -219,12 +219,12 @@ def intentoCarton():
                    fila = fila + 1
               else:
                    break
-              if (fila == 3):
+          if (fila == 3):
                  continue
 
-              carton[columna][fila] = numero
-              numeroCarton = numeroCarton + 1
-              contador = 0
+          carton[columna][fila] = numero
+          numerosCarton = numerosCarton + 1
+          contador = 0
       
     for x in range(9):
         huecos = 0 
@@ -239,7 +239,7 @@ def intentoCarton():
 def intentoCartonPro():
     fila = 0
     columna = 0
-    carton = intenntoCarton()
+    carton = intentoCarton()
     cartonpro = [
         [0,0,0,0,0,0,0,0,0],
         [0,0,0,0,0,0,0,0,0],
@@ -253,14 +253,14 @@ def intentoCartonPro():
 
 def intentoCartonRePro():
     contar = 0
-    for contar in range(0, 100)
-        carton = intentoCartonPro()
-    contar = contar + 1
-    if avanzar_de_izquierda_a_derecha(carton) == avanzar_de_arriba_a_abajo(carton) == validar_5_celdas_por_fila(carton) == validar_matriz_3x9(carton) == validar_no_columnas_vacias(carton) == validar_no_columnas_totalmente_llenas(carton) == validar_solo_tres_columnas_con_solo_una_celda_ocupada(carton) == validar_no_tres_celdas_vacias_consecutivas_por_fila(carton) == validar_no_tres_celdas_ocupadas_consecutivas_por_fila(carton) == validar_cada_columna_una_decena_hasta_el_90(carton) == 1 and validar_quince_numeros(carton):
-       print (contar)
-       break
-    else:
-       print ("Intentar después")
+    while True:
+       carton = intentoCartonPro()
+       contar = contar + 1
+       if avanzar_de_izquierda_a_derecha(carton) == avanzar_de_arriba_a_abajo(carton) == validar_5_celdas_por_fila(carton) == validar_matriz_3x9(carton) == validar_no_columnas_vacias(carton) == validar_no_columnas_totalmente_llenas(carton) == validar_solo_tres_columnas_con_solo_una_celda_ocupada(carton) == validar_no_tres_celdas_vacias_consecutivas_por_fila(carton) == validar_no_tres_celdas_ocupadas_consecutivas_por_fila(carton) == validar_cada_columna_una_decena_hasta_el_90(carton) == 1 and validar_quince_numeros(carton):
+         print(contar)
+         break
     return carton
 
+intentoCartonRePro()
+print(intentoCartonRePro())
 
