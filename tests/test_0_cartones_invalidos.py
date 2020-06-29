@@ -32,5 +32,8 @@ def test_no_columnas_llenas():
 def test_solo_tres_columnas_con_solo_una_celda_ocupada():
     assert bingo.validar_solo_tres_columnas_con_solo_una_celda_ocupada(micarton) != 1
 
-def test_no_tres_celdas_consecutivas():
+def test_no_tres_celdas_vacías_consecutivas():
     assert bingo.validar_no_tres_celdas_vacias_consecutivas_por_fila(micarton) != 1
+
+def test_no_tres_celdas_ocupadas_consecutivas():
+    assert bingo.validar_no_tres_celdas_ocupadas_consecutivas_por_fila(micarton) != 1
