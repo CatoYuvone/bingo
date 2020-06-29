@@ -96,3 +96,16 @@ def validar_no_columnas_vacias(carton):
               columna = columna + 1
          fila = fila + 1
     return bandera
+
+
+def validar_no_columnas_totalmente_llenas(carton):
+    fila = 0
+    columna = 0
+    bandera = 1
+    for fila in range(0, 1):
+         for columna in range(0,9):
+              if carton[fila][columna] > 0 and carton[fila+1][columna] > 0 and carton[fila+2][columna] > 0:
+                  bandera = 0
+              columna = columna + 1
+         fila = fila + 1
+    return bandera  
