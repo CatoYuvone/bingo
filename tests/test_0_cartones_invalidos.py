@@ -1,9 +1,9 @@
 from src import bingo
 
 micarton = (
-      (0, 0, 0, 6, 0, 0, 0, 2, 0),
-      (0, 0, 0, 4, 0, 0, 0, 0, 0),
-      (0, 0, 0, 0, 0, 0, 0, 0, 0),
+      (0, 0, 0, 6, 0, 90, 0, 2, 0),
+      (0, 0, 0, 4, 0, 67, 0, 0, 0),
+      (0, 0, 0, 0, 0, 44, 0, 0, 0),
       (0, 0, 0, 0, 0, 43, 0, 0, 0)
 )
 
@@ -25,3 +25,6 @@ def test_matriz_3x9():
 
 def test_no_columnas_vacias():
     assert bingo.validar_no_columnas_vacias(micarton) != 1
+
+def test_no_columnas_llenas():
+    assert bingo.validar_no_columnas_totalmente_llenas(micarton) != 1
