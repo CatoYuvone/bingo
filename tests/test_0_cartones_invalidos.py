@@ -28,3 +28,8 @@ def test_no_columnas_vacias():
 
 def test_no_columnas_llenas():
     assert bingo.validar_no_columnas_totalmente_llenas(micarton) != 1
+
+def test_solo_tres_columnas_con_solo_una_celda_ocupada():
+    assert bingo.validar_solo_tres_columnas_con_solo_una_celda_ocupada(micarton) != 1
+
+
