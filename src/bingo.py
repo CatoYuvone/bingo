@@ -48,5 +48,20 @@ def avanzar_de_arriba_a_abajo(carton):
         fila = fila + 1                                                 # Súmole  al contador de filas
     
     return bandera   # Retorno 0 si alguna celda no es menor que la celda de debajo suya, 1 en caso contrario                  
-             
+         
+
+def validar_5_celdas_por_fila(carton):
+    bandera = 0
+    for fila in carton: 
+        contador = 0
+        for celda in fila:
+            if celda != 0:
+                contador = contador + 1
+        if contador == 5:
+            bandera = bandera + 1
+    if bandera != 3:
+         bandera = 0
+    if bandera == 3:
+         bandera = 1
+    return bandera
 
