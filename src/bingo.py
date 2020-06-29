@@ -1,4 +1,4 @@
-
+import random
 # Los 0 representan celdas vacías en el cartón
 # Los 1 representan celdas ocupadas en el cartón
 
@@ -174,4 +174,83 @@ def validar_cada_columna_una_decena_hasta_el_90(carton):
                       bandera = 0
     return bandera
             
+
+def intentoCarton():
+    contador = 0
+    carton = [
+        [0,0,0],
+        [0,0,0],
+        [0,0,0],
+        [0,0,0],
+        [0,0,0],
+        [0,0,0],
+        [0,0,0],
+        [0,0,0],
+        [0,0,0]
+    ]
+    numerosCarton = 0
+
+    while numerosCarton < 15:
+          contador = contador + 1
+          if (contador == 50): 
+             return intentoCarton()
+
+          numero = random.randint (1,90)
+
+          columna = numero // 10
+          if (columna == 9):
+             columna = 8
+          huecos = 0
+          for i in range(3):
+              if carton[columna][i] == 0:
+                 huecos = huecos + 1 
+              if carton[columna][i] == numero:
+                 huecos = 0
+                 break
+          if huecos < 2:
+             continue
+          fila = 0
+          for j in range(3):
+              huecos = 0
+              for i in range(9):
+                  if (carton[i][fila] == 0):
+                     huecos = huecos + 1
+              if huecos < 5 or carton[columna][fila] != 0:
+                   fila = fila + 1
+              else:
+                   break
+              if (fila == 3):
+                 continue
+
+              carton[columna][fila] = numero
+              numeroCarton = numeroCarton + 1
+              contador = 0
+      
+    for x in range(9):
+        huecos = 0 
+        for y in range(3):
+            if carton[x][y] == 0:
+               huecos = huecos + 1
+        if huecos == 3:
+            return intentoCarton() 
+    return carton
+
+
+def intentoCartonPro():
+    fila = 0
+    columna = 0
+    carton = intenntoCarton()
+    cartonpro = [
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0]
+    ]
+    for columna in range(0,9):
+        for fila in range(0,3):
+            cartonpro[fila][columna] = carton[columna][fila]
+    return cartonpro
+
+
+def intentoCartonRePro():
+     
 
