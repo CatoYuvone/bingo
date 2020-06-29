@@ -109,3 +109,20 @@ def validar_no_columnas_totalmente_llenas(carton):
               columna = columna + 1
          fila = fila + 1
     return bandera  
+
+
+def validar_solo_tres_columnas_con_solo_una_celda_ocupada(carton):
+    fila = 0
+    columna = 0
+    contador = 0
+    bandera = 0
+    for fila in range(0, 1):
+         for columna in range(0,9):
+             if (carton[fila][columna] + carton[fila+1][columna] + carton[fila+2][columna]) == max([carton[fila][columna], carton[fila+1][columna], carton[fila+2][columna]]):
+                contador= contador + 1
+             columna = columna +1
+         fila = fila +1
+    if contador == 3:
+       bandera = 1
+    return bandera
+
