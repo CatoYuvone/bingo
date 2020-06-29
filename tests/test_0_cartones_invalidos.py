@@ -19,3 +19,6 @@ def test_arriba_a_abajo():
 
 def test_5_celdas_por_fila():
     assert bingo.validar_5_celdas_por_fila(micarton) != 1
+
+def test_matriz_3x9():
+    assert bingo.validar_matriz_3x9(micarton) != 1
