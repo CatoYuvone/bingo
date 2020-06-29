@@ -4,9 +4,9 @@
 
 def carton():
     carton = (
-       (0,0,27,36,0,56,62,0,80),
-       (0,11,0,37,41,0,0,75,88),
-       (3,12,0,0,48,0,65,76,0)
+       (0,0,27,36,0,56,62,0,88),
+       (0,11,0,37,41,0,0,73,90),
+       (9,12,0,0,48,0,65,79,0)
     )
     return carton
 
@@ -156,4 +156,22 @@ def validar_no_tres_celdas_ocupadas_consecutivas_por_fila(carton):
     return bandera
 
      
+
+def validar_cada_columna_una_decena_hasta_el_90(carton):   
+    fila = 0
+    columna = 0 
+    bandera = 1
+    for fila in range(0, 3):
+        for columna in range(0,9): 
+            if columna == 0:
+                  if (carton[fila][columna] != 0) and 0 >= carton[fila][columna] >= 9:
+                      bandera = 0
+            elif  0 < columna < 8:
+                  if (carton[fila][columna] != 0) and ((10 * (columna)) > carton[fila][columna]  or carton[fila][columna] > ((10 * columna) + 9)):
+                      bandera = 0
+            elif columna == 8:
+                  if (carton[fila][columna] != 0) and 80 > carton[fila][columna] > 90:
+                      bandera = 0
+    return bandera
+            
 
