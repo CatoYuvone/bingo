@@ -22,3 +22,6 @@ def test_5_celdas_por_fila():
 
 def test_matriz_3x9():
     assert bingo.validar_matriz_3x9(micarton) != 1
+
+def test_no_columnas_vacias():
+    assert bingo.validar_no_columnas_vacias(micarton) != 1
