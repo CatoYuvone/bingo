@@ -65,3 +65,22 @@ def validar_5_celdas_por_fila(carton):
          bandera = 1
     return bandera
 
+
+def validar_matriz_3x9(carton):
+    bandera1 = 0
+    bandera2 = 0
+    superbandera = 0
+    contador2 = 0
+    for fila in carton:
+         contador1 = 0
+         for celda in fila:
+           contador1 = contador1 +1
+         if contador1 == 9:
+             bandera1 = bandera1 + 1
+         contador2 = contador2 + 1
+    if contador2 == 3:
+       bandera2 = bandera2 + 1
+    if bandera1 == 3 and bandera2 == 1:
+       superbandera = 1
+    return superbandera
+
