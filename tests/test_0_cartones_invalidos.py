@@ -13,3 +13,6 @@ def test_15_celdas():
 
 def test_izq_a_der():
     assert bingo.avanzar_de_izquierda_a_derecha(micarton) != 1
+
+def test_arriba_a_abajo():
+    assert bingo.avanzar_de_arriba_a_abajo(micarton) != 1
