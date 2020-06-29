@@ -1,0 +1,58 @@
+[33mfe7fa7f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m Creé el .travis.yml
+[33m012ba21[m[33m ([m[1;31mgithub/master[m[33m)[m Arreglé el lo que generaba un cartón random correcto
+[33me1bcd5c[m Hice lo de generar el cartón muchas veces hasta que dé uno correcto
+[33meee4980[m Hago lo del intentocarton en python y lo paso de una matriz de 9 x 3 a una de 3 x 9
+[33m425ff47[m Merge pull request #24 from CatoYuvone/23-cada-columna-una-decena-el-ulitmo-90
+[33me38d9ab[m[33m ([m[1;31mgithub/23-cada-columna-una-decena-el-ulitmo-90[m[33m, [m[1;32m23-cada-columna-una-decena-el-ulitmo-90[m[33m)[m Nuevo test que valida que cada columna de un carton (contando de izquierda a derecha) contiene numeros que van del 1 al 9, 10 al 19, 20 al 29 ..., 70 al 79 y 80 al 90.
+[33m87c2675[m Merge pull request #22 from CatoYuvone/15-no-tres-celdas-ocupadas-consecutivas-por-fila
+[33m64d81eb[m[33m ([m[1;31mgithub/15-no-tres-celdas-ocupadas-consecutivas-por-fila[m[33m, [m[1;32m15-no-tres-celdas-ocupadas-consecutivas-por-fila[m[33m)[m Nuevo test que valida que no haya más de dos celdas ocupadas consecutivas por fila. Y arreglo el test TAREA4#14otresceldasvaciasconsecutivasvacias
+[33mb4c09cf[m Merge pull request #21 from CatoYuvone/14-no-tres-celdas-vacias-consecutivas-por-fila
+[33m20e8fbe[m[33m ([m[1;31mgithub/14-no-tres-celdas-vacias-consecutivas-por-fila[m[33m, [m[1;32m14-no-tres-celdas-vacias-consecutivas-por-fila[m[33m)[m Nuevo test que valida que no haya más de dos celdas vacías consecutivas por fila
+[33mc419e87[m Merge pull request #20 from CatoYuvone/13-validar-exactamente-3-columnas-con-solo-una-celda-ocupada
+[33m59bc62f[m[33m ([m[1;31mgithub/13-validar-exactamente-3-columnas-con-solo-una-celda-ocupada[m[33m, [m[1;32m13-validar-exactamente-3-columnas-con-solo-una-celda-ocupada[m[33m)[m Nuevo test que valida cada cartón tenga exactamente tres columnas con solo una celda ocupada
+[33m20ab383[m Merge pull request #19 from CatoYuvone/12-validar-no-columnas-con-tres-celdas-ocupadas
+[33m7114920[m[33m ([m[1;31mgithub/12-validar-no-columnas-con-tres-celdas-ocupadas[m[33m, [m[1;32m12-validar-no-columnas-con-tres-celdas-ocupadas[m[33m)[m Nuevo test que valida que no haya tres celdas ocupadas en una columna
+[33m6602e93[m Merge pull request #18 from CatoYuvone/11-validar-no-columnas-vacias
+[33m9be606d[m[33m ([m[1;31mgithub/11-validar-no-columnas-vacias[m[33m, [m[1;32m11-validar-no-columnas-vacias[m[33m)[m Nuevo test que valida que no haya columnas vacías (creo que ya había otro, revisar más tarde)
+[33mdd19039[m Merge pull request #17 from CatoYuvone/9-validar-matriz-3x9
+[33m55ff846[m[33m ([m[1;31mgithub/9-validar-matriz-3x9[m[33m, [m[1;32m9-validar-matriz-3x9[m[33m)[m Nuevo test que valida que el cartón sea una matriz de 3 x 9
+[33mceb0a9e[m Merge pull request #16 from CatoYuvone/8-validar-cada-fila-cinco-celdas
+[33m248c06a[m[33m ([m[1;31mgithub/8-validar-cada-fila-cinco-celdas[m[33m, [m[1;32m8-validar-cada-fila-cinco-celdas[m[33m)[m Nuevo test que valida que haya exactamente cinco celdas ocupadas en cada fila
+[33mfec6d11[m Arreglo el test TAREA1nomenosde15celdas para que ande con cartones no binarios
+[33m46b0ecd[m Arreglo el test TAREA1nomasde15celdas para que ande con cartones no binarios
+[33me5a8a1a[m Cambio el cartón de bingo.py a uno válido
+[33mc305826[m Hago que el test TAREA3asciendedeizquierdaaderecha use el cartón de bingo.py
+[33m507ad80[m Para el test TAREA3asciendedearribaaabajo uso el carton de bingo.py
+[33mf54bb58[m Para el test_celdas usar el carton de bingo.py
+[33m21dea9b[m Merge pull request #7 from CatoYuvone/4-validar-en-columnas-ascienden-de-arriba-a-abajo
+[33m79c9698[m[33m ([m[1;31mgithub/4-validar-en-columnas-ascienden-de-arriba-a-abajo[m[33m, [m[1;32m4-validar-en-columnas-ascienden-de-arriba-a-abajo[m[33m)[m Nuevo test que valida que que en cada columna los números de las celdas asciendan de arriba a abajo
+[33m64c23c7[m Merge pull request #6 from CatoYuvone/3-validar-ascender-izquierda-a-derecha
+[33me61f372[m[33m ([m[1;31mgithub/3-validar-ascender-izquierda-a-derecha[m[33m, [m[1;32m3-validar-ascender-izquierda-a-derecha[m[33m)[m Comento el test que valida los número asciendan de izquierda a derecha
+[33m473cf00[m Nuevo test que valida que los números de cada fila asciendan de izquierda a derecha
+[33m165ad86[m Nueva función para validar celdas ocupadas
+[33mb0c1f89[m Merge pull request #2 from CatoYuvone/1-validar-1-a-90
+[33m3d9bba5[m[33m ([m[1;31mgithub/1-validar-1-a-90[m[33m, [m[1;32m1-validar-1-a-90[m[33m)[m Nuevo test que valida que los números del cartón van del 1 al 90
+[33m5634f45[m Renombro los archivos de los tests de la TAREA 1 para que se sepan que son de la TAREA 1
+[33m2a1fe04[m Comento el test de la TAREA 2 y modifico el cartón de bingo.py para que los testeos de correctamente
+[33mb9cf3b9[m Merge branch 'master' of https://github.com/CatoYuvone/bingo
+[33me7e5f5a[m Comento los tests de la TAREA 1
+[33m9021ea4[m Testeo que no haya filas vacías, TAREA 2
+[33m4abd936[m Merge branch 'master' of https://github.com/CatoYuvone/bingo
+[33m732365f[m Cambiamos nombre de la variable
+[33m94fcd84[m Cambiamos nombre de variable
+[33mabd575a[m Merge branch 'master' of https://github.com/CatoYuvone/bingo
+[33mbd9d166[m Comentamos significado de 0 y 1
+[33m1839ae2[m Comentado el test que testea si hay exactamente 15 celdas
+[33m7fae4df[m Cambio celda ocupada de fila 2 a fila 3
+[33m7c69828[m Testeo que ninguna columna esté vacía
+[33m208054b[m Testear que no tenga más de 15 celdas
+[33m58d785f[m Testear que no tenga menos de 15 celdas
+[33mab32ef5[m Renombrar README para usar markdown
+[33m7e4d986[m Nuevos tests y consignas
+[33m6ecf185[m Agregados archivos __init__.py
+[33md993701[m Nueva función restar
+[33m52732c9[m Revert "Revert "Nueva función sumar""
+[33m557374a[m Revert "Nueva función sumar"
+[33mb1af793[m Nueva función sumar
+[33m43b391e[m Utilizo puntuación correcta
+[33m31f25b3[m Iinicio del proyecto
