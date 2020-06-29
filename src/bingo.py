@@ -132,6 +132,21 @@ def validar_no_tres_celdas_vacias_consecutivas_por_fila(carton):
     for fila in carton:
         consec = 0
         for celda in fila:
+            if celda == 0:
+               consec = consec +1
+            elif celda > 0:
+               consec = 0
+            if consec > 2:
+               bandera = 0
+    return bandera
+
+            
+
+def validar_no_tres_celdas_ocupadas_consecutivas_por_fila(carton):
+    bandera = 1
+    for fila in carton:
+        consec = 0
+        for celda in fila:
             if celda > 0:
                consec = consec +1
             elif celda == 0:
@@ -140,6 +155,5 @@ def validar_no_tres_celdas_vacias_consecutivas_por_fila(carton):
                bandera = 0
     return bandera
 
-            
      
 
