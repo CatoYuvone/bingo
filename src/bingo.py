@@ -261,6 +261,5 @@ def intentoCartonRePro():
          break
     return carton
 
-intentoCartonRePro()
 print(intentoCartonRePro())
 
