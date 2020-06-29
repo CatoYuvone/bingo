@@ -126,3 +126,20 @@ def validar_solo_tres_columnas_con_solo_una_celda_ocupada(carton):
        bandera = 1
     return bandera
 
+
+def validar_no_tres_celdas_vacias_consecutivas_por_fila(carton):
+    bandera = 1
+    for fila in carton:
+        consec = 0
+        for celda in fila:
+            if celda > 0:
+               consec = consec +1
+            elif celda == 0:
+               consec = 0
+            if consec > 2:
+               bandera = 0
+    return bandera
+
+            
+     
+
