@@ -16,3 +16,6 @@ def test_izq_a_der():
 
 def test_arriba_a_abajo():
     assert bingo.avanzar_de_arriba_a_abajo(micarton) != 1
+
+def test_5_celdas_por_fila():
+    assert bingo.validar_5_celdas_por_fila(micarton) != 1
