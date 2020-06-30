@@ -261,5 +261,23 @@ def intentoCartonRePro():
          break
     return carton
 
-print(intentoCartonRePro())
+#print(intentoCartonRePro())
 
+
+
+
+def imprimirCarton():
+    carton = intentoCartonRePro()
+    for fila in carton:
+        print("[", end = "")
+        contador = 0
+        for celda in fila:
+            if contador != 8:
+               print(celda, ",", sep = "", end = " ")
+            else:
+               print(celda, end = "")
+            contador = contador +1
+        print("]")
+
+
+imprimirCarton()
