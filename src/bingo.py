@@ -164,13 +164,13 @@ def validar_cada_columna_una_decena_hasta_el_90(carton):
     for fila in range(0, 3):
         for columna in range(0,9): 
             if columna == 0:
-                  if (carton[fila][columna] != 0) and 0 >= carton[fila][columna] >= 9:
+                  if (carton[fila][columna] != 0) and (0 >= carton[fila][columna] or carton[fila][columna] > 9):
                       bandera = 0
             elif  0 < columna < 8:
                   if (carton[fila][columna] != 0) and ((10 * (columna)) > carton[fila][columna]  or carton[fila][columna] > ((10 * columna) + 9)):
                       bandera = 0
             elif columna == 8:
-                  if (carton[fila][columna] != 0) and 80 > carton[fila][columna] > 90:
+                  if (carton[fila][columna] != 0) and (80 > carton[fila][columna] or carton[fila][columna] > 90):
                       bandera = 0
     return bandera
             
