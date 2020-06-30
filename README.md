@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/CatoYuvone/bingo.svg?branch=master)](https://travis-ci.org/CatoYuvone/bingo)
 [![Coverage Status](https://coveralls.io/repos/github/CatoYuvone/bingo/badge.svg?branch=master)](https://coveralls.io/github/CatoYuvone/bingo?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/CatoYuvone/bingo/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/CatoYuvone/bingo/?branch=master)
 # Consignas
 
 - Escribir un test que valide que el carton no tiene menos de 15 celdas ocupadas
