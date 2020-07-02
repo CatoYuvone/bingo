@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Bingo<\title>
+   <title>Bingo</title>
    <meta charset="UTF-8">
-<\head>
+</head>
 
 <style>
 body {
@@ -44,7 +44,7 @@ body {
 .celda_vacia {
      background-color: black;
 }
-<\style>
+</style>
 
 
 <body>
@@ -53,16 +53,16 @@ body {
     <div class = "fila">
         {% for celda in fila %}
            {% if celda == 0 %}
-              <div class = "celda_vacia"><\div>
+              <div class = "celda_vacia"></div>
            {% else %}
-              <div class = "celda"> {{ celda }} <\div>
+              <div class = "celda"> {{ celda }} </div>
            {% endif %} 
         {% endfor %}
     </div>
     {% endfor %}
-<\div>              
-<\body>
+</div>              
+</body>
 
-<\html>
+</html>
 
 
