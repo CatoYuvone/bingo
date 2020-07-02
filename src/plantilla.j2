@@ -51,11 +51,11 @@ body {
 <div class = "carton">
     {% for fila in carton %} 
     <div class = "fila">
-        {% for casilla in fila %}
-           {% if casilla == 0 %}
+        {% for celda in fila %}
+           {% if celda == 0 %}
               <div class = "celda_vacia"><\div>
            {% else %}
-              <div class = "celda"> {{celda}} <\div>
+              <div class = "celda"> {{ celda }} <\div>
            {% endif %} 
         {% endfor %}
     </div>
