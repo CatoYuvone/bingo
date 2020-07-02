@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bingo<\title>
+   <meta charset="UTF-8">
+<\head>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+}
+
+.carton {
+     flexd-direction: row;
+     display: flex;    
+}
+
+.fila {
+     display: flex;
+}
+
+
+.fila > div {
+      border: 1px solid blue;
+      width:  2em;
+      height: 2em;
+      justify-content: center;
+      text-align: center;
+      aligm-items: center;
+}
+
+
+.celda {
+     background-color: yellow;
+     color: orange;
+}
+
+.celda_vacia {
+     background-color: black;
+}
+<\style>
+
+
+<body>
+<div class = "carton">
+    {% for fila in carton %} 
+    <div class = "fila">
+        {% for casilla in fila %}
+           {% if casilla == 0 %}
+              <div class = "celda_vacia"><\div>
+           {% else %}
+              <div class = "celda"> {{celda}} <\div>
+           {% endif %} 
+        {% endfor %}
+    </div>
+    {% endfor %}
+<\div>              
+<\body>
+
+<\html>
+
+
