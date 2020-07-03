@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     display: flex; 
+    font-family: arial;
 }
 
 .carton {
@@ -28,21 +29,22 @@ body {
 
 .fila > div {
       border: 1px solid blue;
-      width:  2em;
-      height: 2em;
+      width:  3em;
+      height: 3em;
       justify-content: center;
       text-align: center;
-      aligm-items: center;
+      align-items: center;
+      display: flex;
 }
 
 
 .celda {
-     background-color: yellow;
-     color: orange;
+     background-color: paleturquoise;
+     color: olivedrab;
 }
 
 .celda_vacia {
-     background-color: black;
+     background-color: gold;
 }
 </style>
 
@@ -55,7 +57,7 @@ body {
            {% if celda == 0 %}
               <div class = "celda_vacia"></div>
            {% else %}
-              <div class = "celda"> {{ celda }} </div>
+              <div class = "celda"> <h1> {{ celda }} </h1> </div>
            {% endif %} 
         {% endfor %}
     </div>
