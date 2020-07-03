@@ -5,4 +5,7 @@ mi_carton = intentoCartonRePro()
 
 template = Template(open('src/plantilla.j2').read())
 
-print(template.render(carton = mi_carton))
+file = open("bingo.html", "w")
+file.write(template.render(carton = mi_carton))
+file.close()
+print("Generóse \"bingo.html\".")
