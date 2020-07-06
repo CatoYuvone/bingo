@@ -47,3 +47,7 @@ python carton?bingo?consola.py
 [6, 12, 0, 0, 45, 0, 0, 75, 81]
 [0, 0, 24, 30, 0, 53, 64, 0, 83]
 ```
+
+## LICENCIA
+Este repositorio está bajo la licencia GPU GPLv3. <br>
+Para más información sobre esta licencia consultar el archivo "LICENSE.md".
