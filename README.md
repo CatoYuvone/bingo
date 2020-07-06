@@ -21,5 +21,29 @@ Un cartón considérase válido si y sólo si se cumplen las siguientes condicio
 - En una fila no existen más de dos celdas vacías consecutivas.
 - En una fila no existen más de dos celdas ocupadas consecutivas.
 
+## USO
+Para clonar el repositorio:
+```
+https://github.com/CatoYuvone/bingo.git
+```
+Para ejecutar el código:
+```
+python bingo_web.py
+```
+Y abrir el archivo bingo.html para ver el resultado.
 
+Para ver el resultado en consola:
+```
+python carton?bingo?consola.py
+```
 
+## Ejemplo resultado
+### Web
+![Bingo Web](Images/Bingo_web.png)
+
+### Ejemplo consola
+```
+[3, 11, 0, 37, 0, 0, 61, 71, 0]
+[6, 12, 0, 0, 45, 0, 0, 75, 81]
+[0, 0, 24, 30, 0, 53, 64, 0, 83]
+```
