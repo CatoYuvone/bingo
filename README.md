@@ -34,7 +34,7 @@ Y abrir el archivo bingo.html para ver el resultado.
 
 Para ver el resultado en consola:
 ```
-python carton?bingo?consola.py
+python carton_bingo_consola.py
 ```
 
 ## Ejemplo resultado
